@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Products</title>
+        <link rel="stylesheet" href="./products.css">
+        <link rel="stylesheet" href="../../index.css">
+        <script src="./products.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Suite Store</h2>
+                <div class="links">
+                    <a href="../../index.html">Home</a> 
+                    <a href="./products.html">Products</a>
+                    <a href="../category/category.html">Categories</a>
+                    <a href="../history/history.html">History</a>
+                </div>
+        </div>
+        <div class="body">
+            <div class="leftSide">
+                <form id="formProduct" onsubmit="addData()">
+                    <input type="text" id="prodName" name="prodName" placeholder="Product Name"><br>
+
+                    <input type="number" id="prodAmount" name="amount" placeholder="Amount" min="1"><br>
+
+                    <input type="number" id="prodUnitPrice" name="price" placeholder="Unit Price" min="1"><br>
+
+                    <select name="category" id="category" class="required">
+                        <option value=" " disabled selected>Category</option>
+                    </select><br>
+
+                    <input type="submit" value="Add Product" id="submitBtn">
+                </form>
+            </div>
+            <div class="rightSide">
+                <table id="tableCategory">
+                    <tr>
+                        <th>Code</th>
+                        <th>Product</th>
+                        <th>Amount</th>
+                        <th>Unit Price</th>
+                        <th>Categories</th>
+                    </tr>
+                </table>
+                <script>
+                    showData()
+                </script>
+            </div> 
+        </div>
+    </body>
+</html>

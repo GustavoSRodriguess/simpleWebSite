@@ -1,0 +1,30 @@
+#catName, #tax, #code{
+    padding-left: 10px;
+    border: none;
+    background-color: #ddd;
+    width: 89%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#formCategory{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0;
+}
+
+.btnDel{
+    background-color: #6a65fe;
+    border:none;
+    border-radius: 3px;
+    width: 80%;
+    height: 25px;
+    cursor: pointer;
+    transform: 0.9s;
+}
+
+.btnDel:hover{
+    transform: scale(1.03);
+}

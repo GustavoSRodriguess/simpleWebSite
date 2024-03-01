@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Categories</title>
+        <link rel="stylesheet" href="../../index.css">
+        <link rel="stylesheet" href="category.css">
+        <script src="./category.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Suite Store</h2>
+                <div class="links">
+                    <a href="../../index.html">Home</a>
+                    <a href="../products/products.html" >Products</a>
+                    <a href="./category.html">Categories</a>
+                    <a href="../history/history.html">History</a>
+                </div>
+        </div>
+        <div class="body">
+            <div class="leftSide">
+                <form id="formCategory" onsubmit="addData()">
+
+                    <!-- <input type="number" id="code" name="code" placeholder="Code"><br> -->
+                    
+                    <input type="text" id="catName" name="catName" placeholder="Category Name"><br>
+
+                    <input type="number" id="tax" name="tax" placeholder="Tax (%)" step="0.1" min="0"><br>
+
+                    <input type="submit" value="Add Category" id="submitBtn">
+                </form>
+            </div>
+            <div class="rightSide">
+                <div class="classTable">
+                    <table id="tableCategory">
+                        <tr>
+                            <th>Code</th>
+                            <th>Category</th>
+                            <th>Tax (%)</th>
+                            <th></th>
+                        </tr>
+                        <!--
+                        <tr id="tableRows">
+                            <td>Teste</td>
+                            <td>Teste</td>
+                            <td>Teste</td>
+                        </tr>
+                    -->
+                    </table>
+                    <script>
+                        showData()
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
